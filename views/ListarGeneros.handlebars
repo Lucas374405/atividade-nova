@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/style.css">
+
+<h1>Gêneros de jogos</h1>
+
+<a href="/">Início</a>
+<br>
+<a href="/Jogo">Jogos</a>
+<br>
+<a href="/Devs">Desenvolvedoras</a>
+<br><br>
+
+<a href="/genero/cadastrar">Cadastrar novo gênero</a>
+
+<ul>
+  {{#each Generos}}
+    <li>
+      <a href="/Generos/{{this.id}}">{{this.nome}}</a>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/style.css">
+
+<h1>Desenvolvedoras</h1>
+
+<a href="/">Início</a>
+<br>
+<a href="/Jogo">Jogos</a>
+<br>
+<a href="/Generos">Gêneros</a>
+<br><br>
+
+<a href="/Devs/cadastrar">Cadastrar nova desenvolvedora</a>
+
+<ul>
+  {{#each Devs}}
+    <li>
+      <a href="/Devs/{{this.id}}">{{this.nome}}</a>
+    </li>
+  {{/each}}
+</ul>

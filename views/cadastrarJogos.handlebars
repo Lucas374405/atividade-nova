@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/style.css">
+
+<form action="/Jogo" method="POST">
+
+    <div>
+        <label>Nome do Jogo:</label>
+        <input type="text" name="nome">
+    </div>
+
+    <br>
+
+    <div>
+        <label>Em qual Ano o jogo foi lançado?</label>
+        <input type="number" name="anoDeLancamento">
+    </div>
+
+    <br>
+
+    <div>
+        <label>Qual nota de 0 a 10 o jogo teria?</label>
+        <input type="number" name="avaliacao">
+    </div>
+
+    <br>
+
+    <div>
+        <label>Gênero:</label>
+
+        <select name="generoID">
+
+            {{#each Generos}}
+
+                <option value="{{this.id}}">
+                    {{this.nome}}
+                </option>
+
+            {{/each}}
+
+        </select>
+    </div>
+
+    <br>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
